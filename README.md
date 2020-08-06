@@ -34,7 +34,7 @@ To create an Hello World quantum computing example, I started with the above exa
    
    1: ───────X───────X───M───────
    
-   The above is generted with the followin circ gates:<br/>
+   The above is generated with the followin circ gates:<br/>
    <br/>
    circ.append(cirq.H(qreg[0]))<br/>
    circ.append(cirq.CNOT(qreg[0], qreg[1]))<br/>  // entangle the two qubits
