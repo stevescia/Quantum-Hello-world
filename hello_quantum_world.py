@@ -92,20 +92,3 @@ for bitpair in bitpair_array :
    circ.clear_operations_touching(qreg, range(0, 7))
 
 print ("Received string is: " + recvd_string)
-
-def convert_string_to_bit_pairs(wordstring):
-    print ("received " +  string)
-
-    binary_string = ' '.join(format(x, '08b') for x in bytearray(wordstring, 'utf-8'))
-    return get_array_of_bit_pairs(binary_string)
-
-def get_array_of_bit_pairs(binary_string):
-    print ("received " +  binary_string)
-    n=9
-    binary_array = [(binary_string[i:i+n]) for i in range(0, len(binary_string), n)]
-    n=2
-    bitpair_array = [(binary_array[i:i+n]) for i in range(0, len(binary_string), n)]
-    return bitpair_array
-
-  
-
