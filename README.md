@@ -25,7 +25,7 @@ To create an Hello World quantum computing example, I started with the above exa
 
            "h"
 
-   The circuit for the two first bits in the first character ("h"), is generated as such:
+   The circuit for the two first bits ("01"),  in the first character ("h"), is generated as such:
 
    0: ───H───@───Z───@───H───M───
    
