@@ -24,7 +24,7 @@ def get_array_of_bit_pairs(binary_string):
 def bitstring(bits):
     return ''.join('1' if e else '0' for e in bits)
 
-bitpair_array = convert_string_to_bit_pairs("hello world")
+bitpair_array = convert_string_to_bit_pairs("hello quantum world")
 
 # Create two quantum and classical registers
 qreg = [cirq.LineQubit(x) for x in range (4)]
