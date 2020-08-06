@@ -1,0 +1,466 @@
+﻿C:\Users\x>c:\python38\python.exe  c:\cirq\hello_quantum_world.py
+received hello world
+received 01101000 01100101 01101100 01101100 01101111 00100000 01110111 0110
+ 01110010 01101100 01100100
+0
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 01
+
+
+1
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 10
+
+
+2
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 10
+
+
+3
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────
+          │   │
+1: ───────X───X───M───────────
+recv'ers recv'd message = 00
+
+
+01101000
+4
+4
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 01
+
+
+5
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 10
+
+
+6
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 01
+
+
+7
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 01
+
+
+01100101
+8
+8
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 01
+
+
+9
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 10
+
+
+10
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+11
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────────
+          │   │
+1: ───────X───X───M───────────────
+recv'ers recv'd message = 00
+
+
+01101100
+12
+12
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 01
+
+
+13
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 10
+
+
+14
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+15
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────────
+          │   │
+1: ───────X───X───M───────────────
+recv'ers recv'd message = 00
+
+
+01101100
+16
+16
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 01
+
+
+17
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 10
+
+
+18
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+19
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+01101111
+20
+20
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────────
+          │   │
+1: ───────X───X───M───────────────
+recv'ers recv'd message = 00
+
+
+21
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 10
+
+
+22
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────────
+          │   │
+1: ───────X───X───M───────────────
+recv'ers recv'd message = 00
+
+
+23
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────────
+          │   │
+1: ───────X───X───M───────────────
+recv'ers recv'd message = 00
+
+
+00100000
+24
+24
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 01
+
+
+25
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+26
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 01
+
+
+27
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+01110111
+28
+28
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 01
+
+
+29
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 10
+
+
+30
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+31
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+01101111
+32
+32
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 01
+
+
+33
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+34
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────────
+          │   │
+1: ───────X───X───M───────────────
+recv'ers recv'd message = 00
+
+
+35
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 10
+
+
+01110010
+36
+36
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 01
+
+
+37
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 10
+
+
+38
+sender's sent message = 11
+
+cirquit:
+0: ───H───@───X───Z───@───H───M───
+          │           │
+1: ───────X───────────X───M───────
+recv'ers recv'd message = 11
+
+
+39
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────────
+          │   │
+1: ───────X───X───M───────────────
+recv'ers recv'd message = 00
+
+
+01101100
+40
+40
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 01
+
+
+41
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 10
+
+
+42
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───────
+          │       │
+1: ───────X───────X───M───────────
+recv'ers recv'd message = 01
+
+
+43
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────────
+          │   │
+1: ───────X───X───M───────────────
+recv'ers recv'd message = 00
+
+
+01100100
+Received string is: hello world
