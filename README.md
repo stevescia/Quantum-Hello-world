@@ -1,13 +1,16 @@
 
 # Hello-Quantum-world
 
-Beginner's cirq program to display the canonical hello world string - using a quantum communication protocol, superdense coding.
+Beginner's cirq program to display the canonical hello world string - using a quantum communication protocol, superdense coding.  
+
+From wikipedia:
+"Superdense coding is the underlying principle of secure quantum secret coding. The necessity of having two qubits to decode the information being sent eliminates the risk of eavesdroppers intercepting messages."
 
 Starting with an example of superdense encoding from Jack Hildary's book "Quantum Computing; An applied approach", I modified the example code to superdense encode the canonical "hello world" string for a starter application.  In the book's original example:
 
-  A sender (Alice) encodes two bits of data and sends the encoded qubit to a receiver (Bob).  
+A sender (Alice) encodes two bits of data and sends the encoded qubit to a receiver (Bob).  
 
-  Upon receipt, the receiver (Bob) applies a Bell state to the qubit, measures the qubit to decode the original 2 bits sent by Alice.
+Upon receipt, the receiver (Bob) applies a Bell state to the qubit, measures the qubit to decode the original 2 bits sent by Alice.
 
 # Hello world modification
 
