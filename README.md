@@ -39,6 +39,8 @@ To create an Hello World quantum computing example, I started with the above exa
 
 Note:  Superdense encoding "hi" for brevity :)
 
+from hi_quantum_world.txt file:
+
 C:\Users\x>c:\python38\python.exe  c:\cirq\hello_quantum_world.py
 
 #received hi
