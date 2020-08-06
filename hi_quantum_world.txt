@@ -1,0 +1,87 @@
+﻿C:\Users\x>c:\python38\python.exe  c:\cirq\hello_quantum_world.py
+received hi
+received 01101000 01101001
+0
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 01
+
+
+1
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 10
+
+
+2
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 10
+
+
+3
+sender's sent message = 00
+
+cirquit:
+0: ───H───@───@───H───M───────
+          │   │
+1: ───────X───X───M───────────
+recv'ers recv'd message = 00
+
+
+01101000
+4
+4
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 01
+
+
+5
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 10
+
+
+6
+sender's sent message = 10
+
+cirquit:
+0: ───H───@───X───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 10
+
+
+7
+sender's sent message = 01
+
+cirquit:
+0: ───H───@───Z───@───H───M───
+          │       │
+1: ───────X───────X───M───────
+recv'ers recv'd message = 01
+
+
+01101001
+Received string is: hi
