@@ -1,10 +1,14 @@
 
 # Hello-Quantum-world
 
-Beginner's cirq program to display the canonical hello world string - using a quantum communication protocol, superdense coding.  
+Beginner's cirq program to display the canonical hello world string - using a quantum communication protocol, superdense coding. 
+
+# Quantum Communication Protocol: Superdense coding  
 
 From wikipedia:
 "Superdense coding is the underlying principle of secure quantum secret coding. The necessity of having two qubits to decode the information being sent eliminates the risk of eavesdroppers intercepting messages."
+
+# textbook example 
 
 Starting with an example of superdense encoding from Jack Hidary's book "Quantum Computing; An applied approach", I modified the example code to superdense encode the canonical "hello world" string for a starter application.  In the book's original example:
 
@@ -12,7 +16,7 @@ A sender (Alice) encodes two bits of data and sends the coded/entangled qubit to
 
 Upon receipt, the receiver (Bob) applies a Bell state to the qubit, measures the qubit to decode the original 2 bits sent by Alice.
 
-# Hello world modification
+# "hello world" modification
 
 To create an Hello World quantum computing example, I started with the above example, and added the following:
 
@@ -34,23 +38,23 @@ To create an Hello World quantum computing example, I started with the above exa
    
    1: ───────X───────X───M───────
    
-   The above is generated with the followin circ gates:<br/>
+   The above is generated with the following circ gates:<br/>
    <br/>
    circ.append(cirq.H(qreg[0]))<br/>
    circ.append(cirq.CNOT(qreg[0], qreg[1]))<br/>  // entangle the two qubits
    <br/>
-   #sender encodes the message with the apropriate quantum operation<br/>
+   #sender encodes the message with the appropriate quantum operation<br/>
    circ.append(message[cirq.Z(qreg[0]) //  for bits "01" <br/>
    <br/>
    #receiver measures the bell state<br/>
    circ.append(cirq.CNOT(qreg[0], qreg[1])) // decode the bits from the entangled qubit <br/> 
    circ.append(cirq.H(qreg[0])) <br/>
 
-3) The remaining bit pairs, for each remaining character are processed in a loop, generating and running the appropriate circuit for each remaining bit pair.
+3) The remaining bit pairs, for each remaining character, are processed in a loop generating and running the appropriate circuit for each remaining bit pair.
 
 # program execution
 
-Note:  Superdense coding "hi" for brevity :) - please see the hello_quantum_world.txt output file for full "hello quantum world" circuits.
+Note:  Superdense coding "hi" for readme example brevity :) - please see the hello_quantum_world.txt output file for full "hello quantum world" circuits.
 
 from hi_quantum_world.txt file:
 
@@ -162,4 +166,4 @@ recv'ers recv'd message = 01
 
 01101001
 
-Received string is: hi
+# Received string is: hi
