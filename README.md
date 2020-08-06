@@ -1,5 +1,5 @@
 
-# Quantum-Hello-world
+# Hello-Quantum-world
 
 Beginner's cirq program to display the canonical hello world string - using superdense encoding.
 
@@ -28,9 +28,7 @@ To create an Hello World quantum computing example, I started with the above exa
    The circuit for the first character ("h") is generated as such:
 
    0: ───H───@───Z───@───H───M───
-
-             │       │
-
+   
    1: ───────X───────X───M───────
 
 3) The remaining characters are processed in a loop, generating and running the appropriate circuit for each remaining bit pair.
@@ -55,8 +53,6 @@ cirquit:
 
 0: ───H───@───Z───@───H───M───
 
-          │       │
-
 1: ───────X───────X───M───────
 
 recv'ers recv'd message = 01
@@ -68,8 +64,6 @@ sender's sent message = 10
 cirquit:
 
 0: ───H───@───X───@───H───M───
-
-          │       │
 
 1: ───────X───────X───M───────
 
@@ -83,8 +77,6 @@ cirquit:
 
 0: ───H───@───X───@───H───M───
 
-          │       │
-
 1: ───────X───────X───M───────
 
 recv'ers recv'd message = 10
@@ -96,8 +88,6 @@ sender's sent message = 00
 cirquit:
 
 0: ───H───@───@───H───M───────
-
-          │   │
 
 1: ───────X───X───M───────────
 
@@ -115,8 +105,6 @@ cirquit:
 
 0: ───H───@───Z───@───H───M───
 
-          │       │
-
 1: ───────X───────X───M───────
 
 recv'ers recv'd message = 01
@@ -128,8 +116,6 @@ sender's sent message = 10
 cirquit:
 
 0: ───H───@───X───@───H───M───
-
-          │       │
 
 1: ───────X───────X───M───────
 
@@ -143,8 +129,6 @@ cirquit:
 
 0: ───H───@───X───@───H───M───
 
-          │       │
-
 1: ───────X───────X───M───────
 
 recv'ers recv'd message = 10
@@ -156,8 +140,6 @@ sender's sent message = 01
 cirquit:
 
 0: ───H───@───Z───@───H───M───
-
-          │       │
 
 1: ───────X───────X───M───────
 
