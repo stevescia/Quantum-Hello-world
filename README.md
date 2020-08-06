@@ -1,7 +1,7 @@
 
 # Hello-Quantum-world
 
-Beginner's cirq program to display the canonical hello world string - using superdense coding.
+Beginner's cirq program to display the canonical hello world string - using a quantum communication protocol, superdense coding.
 
 Starting with an example of superdense encoding from Jack Hildary's book "Quantum Computing; An applied approach", I modified the example code to superdense encode the canonical "hello world" string for a starter application.  In the book's original example:
 
