@@ -37,13 +37,13 @@ To create an Hello World quantum computing example, I started with the above exa
    The above is generted with the followin circ gates:<br/>
    <br/>
    circ.append(cirq.H(qreg[0]))<br/>
-   circ.append(cirq.CNOT(qreg[0], qreg[1]))<br/>
+   circ.append(cirq.CNOT(qreg[0], qreg[1]))<br/>  // entangle the two qubits
    <br/>
    #sender encodes the message with the apropriate quantum operation<br/>
    circ.append(message[cirq.Z(qreg[0]) //  for bits "01" <br/>
    <br/>
    #receiver measures the bell state<br/>
-   circ.append(cirq.CNOT(qreg[0], qreg[1])) <br/>
+   circ.append(cirq.CNOT(qreg[0], qreg[1])) <br/> // decode the bits from the entangled qubit
    circ.append(cirq.H(qreg[0])) <br/>
 
 3) The remaining bit pairs, for each remaining character are processed in a loop, generating and running the appropriate circuit for each remaining bit pair.
