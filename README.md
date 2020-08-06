@@ -25,13 +25,25 @@ To create an Hello World quantum computing example, I started with the above exa
 
            "h"
 
-   The circuit for the first character ("h") is generated as such:
+   The circuit for the two first bits in the first character ("h"), is generated as such:
 
    0: ───H───@───Z───@───H───M───
    
    1: ───────X───────X───M───────
+   
+   The above is generted with the followin circ gates:<br/>
+   <br/>
+   circ.append(cirq.H(qreg[0]))<br/>
+   circ.append(cirq.CNOT(qreg[0], qreg[1]))<br/>
+   <br/>
+   #sender encodes the message with the apropriate quantum operation<br/>
+   circ.append(message[cirq.Z(qreg[0]) //  for bits "01" <br/>
+   <br/>
+   #receiver measures the bell state<br/>
+   circ.append(cirq.CNOT(qreg[0], qreg[1])) <br/>
+   circ.append(cirq.H(qreg[0])) <br/>
 
-3) The remaining characters are processed in a loop, generating and running the appropriate circuit for each remaining bit pair.
+3) The remaining bit pairs, for each remaining character are processed in a loop, generating and running the appropriate circuit for each remaining bit pair.
 
 # program execution
 
