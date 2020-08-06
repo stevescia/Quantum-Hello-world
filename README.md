@@ -22,7 +22,7 @@ To create an Hello World quantum computing example, I started with the above exa
 
        h        e         l       l        o                w          o       r       l         d
 
-2) The above bit string is then parsed into "bit pairs", encoding each bit pair using superdense encoding gates (from Hildary's example). the first character ("h") bit pairs look like:
+2) The above bit string is then parsed into "bit pairs", encoding each bit pair using superdense encoding gates (from Hidary's example). the first character ("h") bit pairs look like:
 
    '01', '10', '10', '00'  
 
@@ -43,7 +43,7 @@ To create an Hello World quantum computing example, I started with the above exa
    circ.append(message[cirq.Z(qreg[0]) //  for bits "01" <br/>
    <br/>
    #receiver measures the bell state<br/>
-   circ.append(cirq.CNOT(qreg[0], qreg[1])) <br/> // decode the bits from the entangled qubit
+   circ.append(cirq.CNOT(qreg[0], qreg[1])) // decode the bits from the entangled qubit <br/> 
    circ.append(cirq.H(qreg[0])) <br/>
 
 3) The remaining bit pairs, for each remaining character are processed in a loop, generating and running the appropriate circuit for each remaining bit pair.
