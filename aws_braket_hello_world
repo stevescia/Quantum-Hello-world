@@ -30,11 +30,9 @@ print(aws_account_id)
 #s3_folder = (f"amazon-braket-", "scia-firstq")
 s3_folder = (f"amazon-braket-{aws_account_id}", "scia-firstq")
 
-#bell = Circuit().h(0).cnot(0, 1)
 device = AwsDevice("arn:aws:braket:::device/quantum-simulator/amazon/sv1")
 #device = AwsDevice("arn:aws:braket:::device/qpu/ionq/ionQdevice")
 
-#bitpair_array = convert_string_to_bit_pairs("hello quantum world")
 bitpair_array = convert_string_to_bit_pairs("hello quantum world")
 
 
@@ -53,11 +51,6 @@ for bitpair in bitpair_array :
        continue
 
     loopcount = loopcount + 1
-
-    #message = {"00": [],
-    #          "10": [my_circuit.x([0])],
-    #         "01": [my_circuit.z([0])],
-    #          "11": [my_circuit.x([0]), my_circuit.z([0])]}
 
     m = bitpair
     print ("sender's sent message =", m)
@@ -78,20 +71,19 @@ for bitpair in bitpair_array :
     my_circuit.h(0)
     
     diagram = ascii_circuit_diagram.AsciiCircuitDiagram()
+    
+    results = device.run(my_circuit, s3_folder, shots=1)
 
     print(diagram.build_diagram(my_circuit))
 
-    results = device.run(my_circuit, s3_folder, shots=1)
-
     counts = results.result().measurement_counts
     
-    #keys = counts.keys()
     for k, v in counts.items():
         bitpairstring = bitpairstring + k
     
     print ("recv'ers recv'd message =", bitpairstring)
 
-
+    task = device.run(my_circuit, s3_folder, shots=100)
     status = None
 
     while status != 'COMPLETED':
