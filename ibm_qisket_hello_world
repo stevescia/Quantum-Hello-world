@@ -1,0 +1,93 @@
+    
+%matplotlib inline
+# Importing standard Qiskit libraries
+from qiskit import QuantumCircuit, QuantumRegister, execute, Aer, IBMQ
+from qiskit.compiler import transpile, assemble
+from qiskit.tools.jupyter import *
+from qiskit.visualization import *
+from iqx import *
+from qiskit.circuit.library import XGate
+
+# Loading your IBM Q account(s)
+provider = IBMQ.load_account()
+def convert_string_to_bit_pairs(wordstring):
+    print ("received " +  wordstring)
+
+    binary_string = ' '.join(format(x, '08b') for x in bytearray(wordstring, 'utf-8'))
+    return get_array_of_bit_pairs(binary_string)
+
+def get_array_of_bit_pairs(binary_string):
+    print ("received " +  binary_string)
+    n=9
+    binary_array = [(binary_string[i:i+n]) for i in range(0, len(binary_string), n)]
+    bitpair_array = []
+    for bit_string in binary_array:
+        n=2
+        tmp_bitpair_array = [(bit_string[i:i+n]) for i in range(0, len(bit_string), n)]
+        for bit_pair in tmp_bitpair_array :
+                bitpair_array.append(bit_pair)
+
+    return bitpair_array
+
+bitpair_array = convert_string_to_bit_pairs("hi")
+print (bitpair_array)
+
+loopcount = 0
+bitpairstring = ""
+recvd_string = ""
+for bitpair in bitpair_array :
+
+    
+    # qr = QuantumRegister(2, 'q')
+    circ = QuantumCircuit(2, 2)
+    circ.barrier(range(2))
+
+    circ.draw('mpl')
+    
+    print (loopcount)
+    if (bitpair == ' '):
+       continue
+
+    loopcount = loopcount + 1
+
+    # sender creates bell pair
+    circ.h(0)
+    circ.cx(0, 1)
+
+    #pick a message to send
+    m = bitpair
+    print ("sender's sent message =", m)
+    
+
+    # okay this is caca
+    if (m == "10"):
+        circ.x(0)
+
+    if (m == "01"):
+        circ.z(0)
+
+    if (m == "11"):
+        circ.x(0), circ.z(0)
+
+    # receiver measures the bell state
+    circ.cx(0, 1)
+    circ.h(0)
+
+    circ.measure(range(2), range(2))
+    
+    backend_sim = Aer.get_backend('qasm_simulator')
+    job_sim = execute(circ, backend_sim, shots=1)
+    
+    # Grab the results from the job.
+    result_sim = job_sim.result()
+
+    #print out the cirquit
+    print ("\ncirquit:")
+    print (circ)
+    counts = result_sim.get_counts(circ)
+    print(counts)
+    
+    for k, v in counts.items():
+        bitpairstring = bitpairstring + k
+        
+    print ("recv'ers recv'd message =", bitpairstring)
