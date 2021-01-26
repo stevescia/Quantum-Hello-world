@@ -3,6 +3,8 @@
 
 Beginner's cirq program to display the canonical hello world string - using a quantum communication protocol, superdense coding. 
 
+Added AWS braket and IBM Qisket versions - 01/21
+
 # Quantum Communication Protocol: Superdense coding  
 
 From wikipedia:
